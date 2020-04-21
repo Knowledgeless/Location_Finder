@@ -3,7 +3,7 @@
 #   If you got any unknown error which one I didn't   #
 #   controled in the script, Please let me know.      #
 #   Author: knowledgeless                             # 
-#   Github: http://github.com/knowledgeless           #
+#   Github: https://github.com/knowledgeless           #
 #######################################################
 
 try:
