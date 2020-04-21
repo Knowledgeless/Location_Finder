@@ -3,7 +3,7 @@
 #   If you got any unknown error which one I didn't   #
 #   controled in the script, Please let me know.      #
 #   Author: knowledgeless                             # 
-#   Github: https://github.com/knowledgeless           #
+#   Github: https://github.com/knowledgeless          #
 #######################################################
 
 try:
@@ -11,20 +11,18 @@ try:
     import pprint
     import os
 
-    #os.system("sh install.sh")
+    os.system("sh install.sh")  #installing modules
 
     def locator():
         lat = float(input("\nLatitude : "))
         lon = float(input("Longitude : "))
         locations = (lat, lon)
         location = rc.search(locations)
-        print("\n")
-        #pprint.pprint(location)
-        
+        print("\n")       
         for i in reversed(location):
             for j in i.items():
                 print(j)
-        print("\n")
+            print("\n")        
 
     if __name__ == "__main__":
         locator()
