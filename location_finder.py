@@ -14,8 +14,8 @@ try:
     #os.system("sh install.sh")
 
     def locator():
-        lat = float(input("\nLattitude : "))
-        lon = float(input("ongitude : "))
+        lat = float(input("\nLatitude : "))
+        lon = float(input("Longitude : "))
         locations = (lat, lon)
         location = rc.search(locations)
         print("\n")
