@@ -11,15 +11,20 @@ try:
     import pprint
     import os
 
-    os.system("sh install.sh")
+    #os.system("sh install.sh")
 
     def locator():
-        lat = float(input("\nEnter your lattitude co-ordinates: "))
-        lon = float(input("Enter your longitude co-ordinates: "))
+        lat = float(input("\nLattitude : "))
+        lon = float(input("ongitude : "))
         locations = (lat, lon)
         location = rc.search(locations)
         print("\n")
-        pprint.pprint(location)
+        #pprint.pprint(location)
+        
+        for i in reversed(location):
+            for j in i.items():
+                print(j)
+        print("\n")
 
     if __name__ == "__main__":
         locator()
@@ -32,6 +37,5 @@ except ModuleNotFoundError:
     ''')
 except KeyboardInterrupt:
     print("\n\n\tYou Killed The Process Manually\n")
-
 except ValueError:
     print("\n\tYou Entered Wrong Value\n")
